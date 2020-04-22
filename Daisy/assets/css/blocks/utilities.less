@@ -1,0 +1,59 @@
+// main: ../style.less
+
+/* Text in Center */
+.text__center {
+    text-align: center;
+}
+
+/* Adaptive Image */
+.img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+
+
+    &--absolute {
+        position: absolute;
+
+        &:nth-child(2) {
+            bottom: 0;
+            left: 0;
+        }
+
+        &:nth-child(3) {
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+
+    fill: #fff;
+
+    &--small {
+        height: 37px;
+        width: 37px;
+    }
+}
+
+/* Transparent Wrapper  */
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+
+    background-color: rgba(24, 24, 24, 0.7);
+}
+
+.red {
+    color: #fc635e;
+}
+
+.hide {
+    opacity: .3;
+}

@@ -1,0 +1,68 @@
+// main: ../style.less
+
+.section {
+    position: relative;
+
+    width: 100%;
+}
+
+.section__inner {
+    padding-top: 67px;
+    padding-bottom: 120px;
+}
+
+.section__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    text-align: center;
+}
+
+.section__title {
+    position: relative;
+
+    font-size: 1.87rem;
+    font-weight: 500;
+
+    line-height: 1;
+
+    color: #868686;
+
+    text-transform: uppercase;
+
+    span {
+        color: #fc635e;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: #adadad;
+
+        transform: translateX(-50%);
+    }
+}
+
+.section__subtitle {
+    margin-top: 32px;
+
+    width: 100%;
+    max-width: 526px;
+
+    font-size: 1.3rem;
+    font-weight: 300;
+
+    line-height: 1;
+    letter-spacing: .5px;
+
+    color: #adadad;
+}

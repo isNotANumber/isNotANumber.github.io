@@ -1,0 +1,88 @@
+// main: ../style.less
+
+.intro {
+    position: relative;
+    
+    width: 100%;
+
+    background: url(../images/intro/intro-bg.png) center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    padding: 291px 0;
+
+    text-align: center;
+    opacity: 1;
+}
+
+.intro__title {
+    position: relative;
+    
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1;
+
+    color: #ffffff;
+
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+
+        position: absolute;
+        bottom: 50%;
+
+        width: 107px;
+        height: 8px;
+        background-color: #ffffff;
+        opacity: .2;
+
+        transform: translateY(50%);
+    }
+
+    &::before {
+        left: 0;
+    }
+
+    &::after {
+        right: 0;
+    }
+
+    span {
+        color: #fc635e;
+    }
+}
+
+.intro__subtitle {
+    margin-top: 25px;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+@media @tablet {
+
+    .intro__title {
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            bottom: -27px;
+            left: 50%;
+
+            transform: translateX(-50%);
+        }
+    }
+
+    .intro__subtitle {
+        margin-top: 45px;
+    }
+
+}

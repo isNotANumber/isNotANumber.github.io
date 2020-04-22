@@ -1,0 +1,54 @@
+// main: ../style.less
+
+.person {
+    width: 33%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: column nowrap;
+}
+
+.person__name {
+    margin-top: 25px;
+
+    font-size: 1.87rem;
+    font-weight: 500;
+    line-height: 1;
+
+    color: #565656;
+}
+
+.person__position {
+    margin-top: 15px;
+
+    font-size: 1.33rem;
+    font-weight: 300;
+    line-height: 1;
+
+    color: #565656;
+}
+
+.person__social {
+    margin-top: 15px;
+
+    max-width: 147px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person__social__link {
+
+    transition: opacity .2s linear;
+    &:hover {
+        opacity: .6;
+    }
+}
+
+.person__text {
+    max-width: 319px;
+}
