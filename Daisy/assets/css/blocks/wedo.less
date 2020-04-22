@@ -27,7 +27,9 @@
 }
 
 .wedo__info {
-    width: 40%;
+    width: 100%;
+    max-width: 376px;
+    
 
     &--left {
         text-align: left;
@@ -98,4 +100,41 @@
     width: 55%;
 
     text-align: center;
+}
+
+
+@media @tablet {
+
+    .wedo__inner {
+        flex-direction: column;
+    }
+
+    .wedo__info {
+        text-align: center;
+    }
+
+    .wedo__images {
+        margin-top: 40px;
+    }
+
+    #services2 {
+        
+        .wedo__images {
+            order: 1;
+        }
+
+        .wedo__info {
+            order: 0;
+        }
+
+    }
+
+}
+
+@media @tablet-sm {
+
+    .wedo__images {
+        display: none;    
+    }
+
 }
