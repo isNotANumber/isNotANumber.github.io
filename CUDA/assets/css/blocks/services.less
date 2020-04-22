@@ -1,0 +1,78 @@
+// main: ../style.less
+
+.services {
+    background-color: #17c2a4;
+}
+
+.services__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 20%;
+    min-height: 295px;
+    min-width: 197px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}
+
+.service__title {
+    margin-top: 30px;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+
+    text-transform: uppercase;
+}
+
+.service__description {
+    font-size: 1.067rem;
+    font-weight: 300;
+
+    line-height: 1.6rem;
+}
+
+
+
+/* MEDIA */
+
+@media @tablet {
+
+    .service {
+        min-height: 260px;
+        width: 36%;
+
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+
+    .service__title {
+        margin-top: 0;
+        font-size: 1.4rem;
+    }
+
+    .service__description {
+        max-width: 192px;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media @mobile {
+
+    .service {
+        width: 100%;
+    }
+
+}

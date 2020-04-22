@@ -1,0 +1,62 @@
+// main: ../style.less
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.nav__link {
+    margin-left: .67rem;
+    font-size: 1.066rem;
+    font-weight: 400;
+    padding: 7px 17px 6px;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: #643a79;
+    }
+}
+
+
+/* MEDIA */
+
+@media @tablet {
+
+    .nav__link {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media @mobile {
+
+    .nav {
+        position: absolute;
+        bottom: -120px;
+        right: -35px;
+
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        display: none;
+
+        background-color: #87509c;
+        border: 1px solid #fff;
+    }
+
+    .nav__link {
+        margin: 0;
+    }
+
+}
