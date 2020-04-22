@@ -1,0 +1,112 @@
+// main: ../style.less
+
+.timelapse {
+    position: relative;
+
+    width: 100%;
+    background-color: #1d1d1d;
+}
+
+.timelapse__inner {
+    position: relative;
+
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.timelapse__line {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+
+    z-index: 2;
+
+    width: 5px;
+    height: 100%;
+
+    background-color: #ffffff;
+    
+    transform: translateX(-50%);
+}
+
+.timelapse__col {
+    width: 50%;
+
+    &--left {
+        padding-top: 151px;
+        padding-right: 75px;
+
+        text-align: right;
+
+        .timelapse__elem {
+            margin-bottom: 255px;
+        }
+    }
+
+    &--right {
+        padding-top: 272px; 
+        padding-left: 75px;
+
+        .timelapse__elem {
+            margin-bottom: 353px;
+        }
+    }
+}
+
+
+.timelapse__date {
+    font-size: 3.2rem;
+    font-weight: 400;
+
+    color: #fefefe;
+}
+
+.timelapse__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+
+
+    color: #b7b7b7;
+}
+
+.timelapse__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    z-index: 1;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    transform: translateX(-50%);
+
+    &:before {
+        content: "";
+        display: block;
+
+        position: absolute;
+        bottom: -28px;
+        left: 50%;
+
+        z-index: 1000;
+
+        width: 100%;
+        height: 236px;
+
+        background: url(../images/timelapse/Buildings-White.png) no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+
+        transform: translateX(-50%);
+    }
+}

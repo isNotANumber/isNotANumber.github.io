@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.services {
+    padding-top: 212px;
+    padding-bottom: 265px;
+
+    position: relative;
+
+    background: #181818 url('../images/services/services-bg.png') bottom center no-repeat;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        height: 150px;
+        width: 100%;
+
+        background: rgb(24, 24, 24, 1);
+        background: linear-gradient(-5deg, rgba(24, 24, 24, 1) 49.5%, rgba(255,255,255,1) 50%);
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
+        height: 150px;
+        width: 100%;
+
+        background: rgb(24, 24, 24, 1);
+        background: linear-gradient(-5deg, rgba(255,255,255,1) 49.5%, rgba(24, 24, 24, 0) 50%);
+    }
+}
+
+.services__items {
+    margin-top: 218px;
+    margin-bottom: 481px;
+}
+
+.services__item {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    width: 100%;
+    max-width: 335px;
+    min-height: 311px;
+
+    text-align: center;
+}
+
+.service__name {
+    font-size: 1.73rem;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+.service__description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #383838;
+}

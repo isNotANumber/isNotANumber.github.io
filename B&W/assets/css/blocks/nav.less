@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.nav {
+    position: relative;
+    width: 100%;
+
+    padding: 22px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__col {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    
+    &--left {
+        padding-right: 86.5px;
+        justify-content: flex-end;
+    }
+
+    &--right {
+        padding-left: 86.5px;
+        justify-content: flex-start;
+    }
+}
+
+.nav__link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.87rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #989696;
+
+    transition: color .2s linear;
+
+    &:not(:first-child) {
+        margin-left: 40px;
+    }
+
+    &:hover {
+        color: #010101;
+    }
+}
+
+.nav__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+
+

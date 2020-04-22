@@ -1,0 +1,70 @@
+// main: ../style.less
+
+.dots {
+    position: absolute;
+    bottom: 114px;
+    left: 50%;
+
+    width: 10px;
+    height: 10px;
+
+    padding: 30px 10px;
+
+    cursor: pointer;
+
+    transform: translateX(-50%);
+
+    &:hover {
+        .dot,
+        .dot:after,
+        .dot:before {
+            opacity: 1;
+        }
+    }
+}
+
+.dot {
+    display: block;
+    position: absolute;
+    bottom: 5px;;
+    left: 50%;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: #d0d0d0;
+    opacity: .66;
+
+    transform: translate3d(-50%, -50%, 0);
+    transition: opacity .1s linear;
+
+    &:before,
+    &:after {
+        display: block;
+        content: "";
+
+        position: absolute;
+        left: 0;
+
+        width: 10px;
+        height: 10px;
+
+        border-radius: 50%;
+        background-color: #d0d0d0;
+    }
+
+    &:before {
+        bottom: 25px;
+        opacity: .66;
+
+        transition: opacity .2s linear;
+    }
+
+    &:after {
+        bottom: 50px;
+        opacity: .33;
+
+        transition: opacity .3s linear;
+    }
+}
