@@ -76,6 +76,12 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+/* MEDIA */
+@media (max-width: 767px) {
+  .nav__col {
+    display: none;
+  }
+}
 .section {
   margin-top: 80px;
   width: 100%;
@@ -114,10 +120,23 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+/* MEDIA */
+@media (max-width: 767px) {
+  .section__content {
+    flex-direction: column;
+  }
+}
 .intro {
   position: relative;
   padding-top: 200px;
   padding-bottom: 430px;
+}
+/* MEDIA */
+@media (max-width: 767px) {
+  .intro {
+    padding-top: 70px;
+    padding-bottom: 215px;
+  }
 }
 .btn {
   display: inline-block;
@@ -208,6 +227,12 @@ p {
   opacity: 0.33;
   transition: opacity 0.3s linear;
 }
+/* MEDIA */
+@media (max-width: 767px) {
+  .dots {
+    bottom: 57px;
+  }
+}
 .timelapse {
   position: relative;
   width: 100%;
@@ -285,9 +310,22 @@ p {
   background-position: 50% 50%;
   transform: translateX(-50%);
 }
+/* MEDIA */
+@media (max-width: 767px) {
+  .timelapse__col--left {
+    padding-top: 75px;
+    padding-right: 30px;
+  }
+  .timelapse__col--right {
+    padding-top: 136px;
+    padding-left: 30px;
+  }
+}
 .team__members {
   margin-top: 124px;
   min-height: 364px;
+  display: flex;
+  justify-content: space-between;
 }
 .team__member {
   display: flex;
@@ -310,6 +348,18 @@ p {
   font-size: 0.87rem;
   font-weight: 400;
   color: #b3b3b3;
+}
+/* MEDIA */
+@media (max-width: 767px) {
+  .team__members {
+    margin-top: 62px;
+  }
+  .team__member {
+    margin-top: 35px;
+  }
+  .team__member:nth-child(2) {
+    align-self: center;
+  }
 }
 .services {
   padding-top: 212px;
@@ -367,6 +417,16 @@ p {
   line-height: 1;
   color: #383838;
 }
+/* MEDIA */
+@media (max-width: 767px) {
+  .services__items {
+    margin-top: 114px;
+    margin-bottom: 100px;
+  }
+  .services__item {
+    margin-top: 35px;
+  }
+}
 .contact-us__content {
   flex-flow: column nowrap;
 }
@@ -380,7 +440,7 @@ p {
 }
 .contacts__item {
   width: 100%;
-  max-width: 24%;
+  max-width: 135px;
   text-align: center;
 }
 .contacts__info {
@@ -408,6 +468,12 @@ p {
 }
 .textarea {
   min-height: 195px;
+}
+/* MEDIA */
+@media (max-width: 767px) {
+  .contact-us__contacts {
+    margin: 64px 0 65px;
+  }
 }
 .footer {
   width: 100%;

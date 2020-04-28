@@ -3,6 +3,9 @@
 .team__members {
     margin-top: 124px;
     min-height: 364px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .team__member {
@@ -33,4 +36,23 @@
     font-weight: 400;
 
     color: #b3b3b3;
+}
+
+
+/* MEDIA */
+
+@media @mobile {
+
+    .team__members {
+        margin-top: 62px;
+    }
+
+    .team__member {
+        margin-top: 35px;
+
+        &:nth-child(2) {
+            align-self: center;
+        }
+    }
+
 }
