@@ -2,7 +2,7 @@
 
 .person {
     width: 33%;
-    min-width: 310px;
+    min-width: 270px;
 
     display: flex;
     justify-content: center;
@@ -52,4 +52,26 @@
 
 .person__text {
     max-width: 319px;
+}
+
+
+/* MEDIA */
+
+@media @mobile {
+    .person {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .person__name {
+        margin-top: 10px;
+    }
+
+    .person__position {
+        margin-top: 10px;
+    }
+
+    .person__social {
+        margin-top: 10px;
+    }
 }
