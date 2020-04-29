@@ -9,6 +9,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &.active {
+        .nav__col {
+            display: flex;
+        }
+    }
 }
 
 .nav__col {
@@ -63,6 +69,38 @@
 
     .nav__col {
         display: none;
+
+        position: absolute;
+        top: 60px;
+        left: -15px;
+
+        padding: 0;
+
+        min-width: 188px;
+
+        width: auto;
+
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+
+        background-color: #1d1e1f;
+        box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+
+        z-index: 1;
+
+        &--right {
+            top: 91px;
+        }
+    }
+
+    .nav__link {
+
+        padding: 7px 7px;
+
+        &:not(:first-child) {
+            margin-left: 0;
+        }
     }
 
 }
