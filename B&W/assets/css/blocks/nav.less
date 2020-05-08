@@ -41,7 +41,8 @@
     text-decoration: none;
     color: #989696;
 
-    transition: color .2s linear;
+    transition: color .2s linear,
+        background-color .2s linear;
 
     &:not(:first-child) {
         margin-left: 40px;
@@ -69,6 +70,7 @@
 
     .nav__col {
         display: none;
+        justify-content: space-between;
 
         position: absolute;
         top: 60px;
@@ -76,7 +78,7 @@
 
         padding: 0;
 
-        min-width: 188px;
+        min-width: 0;
 
         width: auto;
 
@@ -96,7 +98,12 @@
 
     .nav__link {
 
-        padding: 7px 7px;
+        padding: 7px 10px;
+
+        &:hover {
+            background-color: #fff;
+            
+        }
 
         &:not(:first-child) {
             margin-left: 0;

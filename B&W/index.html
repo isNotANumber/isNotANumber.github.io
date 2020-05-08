@@ -12,17 +12,17 @@
             <div class="header__inner">
                 <nav class="nav" id="nav">
                     <div class="nav__col nav__col--left">
-                        <a href="#" class="nav__link">Home</a>
-                        <a href="#" class="nav__link">About Us</a>
-                        <a href="#" class="nav__link">Team</a>
+                        <a href="" class="nav__link">Home</a>
+                        <a href="" class="nav__link">About Us</a>
+                        <a href="" class="nav__link">Team</a>
                     </div>
                     <div class="nav__logo">
                         <img src="assets/images/nav/Logo.svg" alt="Logo" class="img">
                     </div>
                     <div class="nav__col nav__col--right">
-                        <a href="#" class="nav__link">Services</a>
-                        <a href="#" class="nav__link">Blog</a>
-                        <a href="#" class="nav__link">Contact Us</a>
+                        <a href="" class="nav__link">Services</a>
+                        <a href="" class="nav__link">Blog</a>
+                        <a href="" class="nav__link">Contact Us</a>
                     </div>
                     <div class="burger-menu" id="burger-menu">
                         <span class="burger-line"></span>
@@ -43,12 +43,12 @@
             </div>
         </div> <!-- /.container -->
 
-        <div class="dots">
+        <div class="dots" data-scroll="#timelapse">
             <div class="dot"></div>
         </div>
     </section> <!-- /.intro -->
 
-    <div class="timelapse">
+    <div class="timelapse" id="timelapse">
         <div class="container">
             <div class="timelapse__inner">
                 <div class="timelapse__col timelapse__col--left">
@@ -101,8 +101,8 @@
                         <span class="member__name">Mark Once</span>
                         <span class="member__pos">Designer & Front-End Developer</span>
                         <div class="member__social">
-                            <a href="#" class="member__link"></a>
-                            <a href="#" class="member__link"></a>
+                            <a href="" class="member__link"></a>
+                            <a href="" class="member__link"></a>
                         </div>
                     </div> <!-- /.team__members -->
 
@@ -113,8 +113,8 @@
                         <span class="member__name">Justin Twice</span>
                         <span class="member__pos">Founder & CEO</span>
                         <div class="member__social">
-                            <a href="#" class="member__link"></a>
-                            <a href="#" class="member__link"></a>
+                            <a href="" class="member__link"></a>
+                            <a href="" class="member__link"></a>
                         </div>
                     </div> <!-- /.team__members -->
 
@@ -125,8 +125,8 @@
                         <span class="member__name">Antonio Never</span>
                         <span class="member__pos">Someone & Somewhere</span>
                         <div class="member__social">
-                            <a href="#" class="member__link"></a>
-                            <a href="#" class="member__link"></a>
+                            <a href="" class="member__link"></a>
+                            <a href="" class="member__link"></a>
                         </div>
                     </div> <!-- /.team__members -->
                 </div>
@@ -169,7 +169,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn">VISIT OUR BLOG</a>
+                <a href="" class="btn">VISIT OUR BLOG</a>
             </div>
         </div>
     </section>
@@ -209,10 +209,19 @@
                     </div>
 
                     <form action="#" class="contact-us__form">
-                        <input type="text" class="form__field" placeholder="Full Name">
-                        <input type="email" class="form__field" placeholder="Email">
-                        <input type="tel" class="form__field" placeholder="Number">
-
+                        <div class="input-wrapper">
+                            <input type="text" class="form__field" placeholder="Full Name" required>
+                            <img src="assets/images/svg/checkmark.svg" class="checkmark" alt="Check Mark">
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="email" class="form__field" placeholder="Email" required>
+                            <img src="assets/images/svg/checkmark.svg" class="checkmark" alt="Check Mark">
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="tel" class="form__field" placeholder="Number" required>
+                            <img src="assets/images/svg/checkmark.svg" class="checkmark" alt="Check Mark">
+                        </div>
+                        
                         <textarea name="Message" id="Message" class="form__field textarea" placeholder="Write your Message here..."></textarea>
 
                         <input type="button" class="btn btn--big" value="Submit">

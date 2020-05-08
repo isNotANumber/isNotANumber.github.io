@@ -39,7 +39,44 @@
     margin-bottom: 150px;
 }
 
+.input-wrapper {
+    position: relative;
+
+    /*&::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+        width: 25px;
+        height: 25px;
+
+        background-image: url("../images/svg/checkmark.svg");
+        background-size: contain;
+
+        opacity: 0;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+        width: 25px;
+        height: 25px;
+
+        background-image: url("../images/svg/checkmark(false).svg");
+        background-size: contain;
+
+        opacity: 0;
+    }*/
+}
+
 .form__field {
+    position: relative;
     width: 100%;
 
     margin-bottom: 20px;
@@ -54,10 +91,33 @@
 
         color: #898888;
     }
+
+    &:invalid {
+        border-color: red;
+    }
+
+    &[required]:valid {
+        border-color: green;
+
+        & + .checkmark {
+            opacity: 1;
+        }
+    }
 }
 
 .textarea {
     min-height: 195px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    width: 25px;
+    height: 25px;
+
+    opacity: 0;
 }
 
 

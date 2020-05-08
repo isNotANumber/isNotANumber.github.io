@@ -2,19 +2,19 @@ $(function() {
 
     /* Smooth Scroll */
 
-    /*$("[data-scroll]").on("click", function(event) {
+    $("[data-scroll]").on("click", function(event) {
         event.preventDefault(); 
 
         let blockId = $(this).data('scroll'),
             blockOffset = $(blockId).offset().top;
             
-        $("#burger-menu").removeClass("active");
-        $("#nav").removeClass("active");
+        /*$("#burger-menu").removeClass("active");
+        $("#nav").removeClass("active");*/
         
         $("html, body").animate({
             scrollTop: blockOffset
         }, 500);
-    });*/
+    });
 
 
 

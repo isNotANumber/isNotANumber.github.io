@@ -110,7 +110,7 @@ p {
   font-weight: 300;
   text-decoration: none;
   color: #989696;
-  transition: color 0.2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
 }
 .nav__link:not(:first-child) {
   margin-left: 40px;
@@ -128,11 +128,12 @@ p {
 @media (max-width: 767px) {
   .nav__col {
     display: none;
+    justify-content: space-between;
     position: absolute;
     top: 60px;
     left: -15px;
     padding: 0;
-    min-width: 188px;
+    min-width: 0;
     width: auto;
     justify-content: center;
     flex-direction: row;
@@ -145,7 +146,10 @@ p {
     top: 91px;
   }
   .nav__link {
-    padding: 7px 7px;
+    padding: 7px 10px;
+  }
+  .nav__link:hover {
+    background-color: #fff;
   }
   .nav__link:not(:first-child) {
     margin-left: 0;
@@ -532,7 +536,42 @@ p {
   max-width: 770px;
   margin-bottom: 150px;
 }
+.input-wrapper {
+  position: relative;
+  /*&::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+        width: 25px;
+        height: 25px;
+
+        background-image: url("../images/svg/checkmark.svg");
+        background-size: contain;
+
+        opacity: 0;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+        width: 25px;
+        height: 25px;
+
+        background-image: url("../images/svg/checkmark(false).svg");
+        background-size: contain;
+
+        opacity: 0;
+    }*/
+}
 .form__field {
+  position: relative;
   width: 100%;
   margin-bottom: 20px;
   padding: 22px;
@@ -544,8 +583,25 @@ p {
   line-height: 1;
   color: #898888;
 }
+.form__field:invalid {
+  border-color: red;
+}
+.form__field[required]:valid {
+  border-color: green;
+}
+.form__field[required]:valid + .checkmark {
+  opacity: 1;
+}
 .textarea {
   min-height: 195px;
+}
+.checkmark {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
 }
 /* MEDIA */
 @media (max-width: 767px) {
